@@ -1,0 +1,117 @@
+/* Import des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap');
+
+/* Typographie */
+body {
+    font-family: 'Dancing script', sans-serif;
+    color: #4b3d3d; /* Brun chocolat pour le texte */
+    background: #f5e4d7; /* Beige crème pour l'arrière-plan */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4b3d3d, #a68a7d); /* Dégradé de chocolat et marron clair */
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 3.5rem; /* Taille de la police */
+    color: #d3d3d3; /* Gris clair pour le titre */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre portée pour plus de visibilité */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #4b3d3d; /* Brun chocolat pour un contraste clair */
+}
+
+/* Boutons */
+button, .btn {
+    background-color: #a68a7d; /* Marron clair pour les boutons */
+    color: #ffffff; /* Blanc pour le texte des boutons */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #4b3d3d; /* Brun chocolat au survol */
+    transform: scale(1.1); /* Effet d'agrandissement au survol */
+}
+
+/* Grille des produits */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    background-color: #f5e4d7; /* Fond beige crème */
+}
+
+.product-card {
+    background-color: #ffffff; /* Cartes blanches pour le contraste */
+    border: 3px solid #a68a7d; /* Bordure marron clair */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Augmentation de l'ombre au survol */
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product-card img:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+}
+
+.product-card h3 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.8rem;
+    margin: 15px 0;
+    color: #4b3d3d; /* Brun chocolat pour les titres des produits */
+}
+
+.product-card p {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1rem;
+    color: #666; /* Gris doux pour les descriptions */
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #a68a7d, #4b3d3d); /* Dégradé marron clair et chocolat */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #f5e4d7; /* Beige crème pour les liens */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
