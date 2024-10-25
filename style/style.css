@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap');
 
 /* Typographie */
-body {
-    font-family: 'Dancing script', sans-serif;
+html, body {
+    height: 100%;
+    font-family: 'Baloo 2', sans-serif;
     color: #4b3d3d; /* Brun chocolat pour le texte */
     background: #f5e4d7; /* Beige crème pour l'arrière-plan */
     line-height: 1.6;
@@ -20,34 +21,121 @@ header {
 }
 
 header h1 {
-    font-family: 'Baloo 2', sans-serif;
-    font-size: 3.5rem; /* Taille de la police */
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 5.5rem; /* Taille de la police */
     color: #d3d3d3; /* Gris clair pour le titre */
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre portée pour plus de visibilité */
 }
 
 header p {
-    font-size: 1.2rem;
-    color: #4b3d3d; /* Brun chocolat pour un contraste clair */
+    font-size: 1.8rem;
+    color: #d3d3d3; /* Gris clair pour le titre */
+}
+
+/* Conteneur des boutons */
+.button-container {
+    margin-top: 20px; /* Espace au-dessus des boutons */
+    display: flex;
+    gap: 15px; /* Espace entre les boutons */
+    justify-content: center; /* Centrer les boutons */
 }
 
 /* Boutons */
-button, .btn {
-    background-color: #a68a7d; /* Marron clair pour les boutons */
-    color: #ffffff; /* Blanc pour le texte des boutons */
+.btn {
+    background: #f5e4d7; /* Dégradé chocolat et marron clair pour les boutons */
+    color: #4b3d3d; /* Brun chocolat pour le texte */
     padding: 15px 30px;
     border: none;
     border-radius: 50px;
     font-family: 'Baloo 2', sans-serif;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover, .btn:hover {
-    background-color: #4b3d3d; /* Brun chocolat au survol */
+    background: linear-gradient(135deg, #3b2e2e, #876b5e); /* Dégradé plus foncé au survol */
+    color: #f5e4d7; /* Beige crème pour le texte au survol */
     transform: scale(1.1); /* Effet d'agrandissement au survol */
+}
+
+/* Styles pour les images dans les sections */
+.section-image {
+    width: 100px; /* Largeur de l'image */
+    height: 100px; /* Hauteur de l'image */
+    border-radius: 50%; /* Rendre l'image ronde */
+    object-fit: cover; /* Couvrir le conteneur sans déformer l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+    margin-right: 20px; /* Espace à droite de l'image */
+}
+
+/* Styles pour les sections */
+main {
+    flex: 1;
+    padding: 20px; /* Ajoute de l'espace pour éloigner le contenu du header et du footer */
+    display: flex; /* Utilise Flexbox pour centrer les sections */
+    flex-direction: column; /* Aligne les sections verticalement */
+    align-items: center; /* Centre les sections horizontalement */
+}
+
+section {
+    background: linear-gradient(135deg, #4b3d3d, #a68a7d); /* Dégradé de chocolat et marron clair */
+    border-radius: 15px; /* Coins arrondis pour les sections */
+    padding: 30px; /* Espace intérieur */
+    margin: 30px 0; /* Marge entre les sections */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ombre portée douce */
+    overflow: hidden; /* Masque le débordement si nécessaire */
+    max-width: 800px; /* Limite la largeur maximale des sections */
+    width: 90%; /* Prend 90% de la largeur disponible */
+}
+
+/* Styles pour le conteneur image et titre */
+.section-header {
+    display: flex; /* Utilise Flexbox pour l'alignement de l'image et du titre */
+    align-items: flex-start; /* Aligne l'image et le titre en haut */
+    gap: 120px; /* Espace entre l'image et le titre */
+    margin-left: 140px;
+}
+
+/* Réduction de la taille du texte si nécessaire */
+section p {
+    font-size: 1.2rem; /* Taille de la police pour le texte */
+    color: #f5e4d7; /* Beige crème pour le texte au survol */
+    line-height: 1.6; /* Hauteur de ligne pour un meilleur espacement */
+    margin: 10px 0; /* Espacement autour des paragraphes */
+    text-align: justify; /* Justifier le texte pour une apparence plus soignée */
+}
+
+/* Ajoutez un style pour les titres si besoin */
+section h2 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.5rem; /* Taille du titre */
+    color: #f5e4d7; /* Beige crème pour le texte au survol */
+    text-align: left; /* Alignement à gauche */
+}
+
+/* Styles pour les sections avec décalage */
+section {
+    background-color: #ffffff; /* Fond blanc pour les sections */
+    border-radius: 15px; /* Coins arrondis pour les sections */
+    padding: 30px; /* Espace intérieur */
+    margin: 80px 0; /* Marge entre les sections */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ombre portée douce */
+    overflow: hidden; /* Masque le débordement si nécessaire */
+    max-width: 800px; /* Limite la largeur maximale des sections */
+    width: 90%; /* Prend 90% de la largeur disponible */
+}
+
+/* Décalage alternatif pour les sections */
+section:nth-child(odd) {
+    margin-left: 400px; /* Décalage à gauche pour les sections impaires */
+    margin-right: 0; /* Pas de décalage à droite */
+}
+
+section:nth-child(even) {
+    margin-left: 0; /* Pas de décalage à gauche */
+    margin-right: 400px; /* Décalage à droite pour les sections paires */
 }
 
 /* Grille des produits */
@@ -98,20 +186,14 @@ button:hover, .btn:hover {
     margin-bottom: 15px;
 }
 
-/* Footer */
+/* Footer en bas de page */
 footer {
     background: linear-gradient(135deg, #a68a7d, #4b3d3d); /* Dégradé marron clair et chocolat */
     padding: 20px;
     text-align: center;
-    color: white;
-    font-size: 0.9rem;
-}
-
-footer a {
-    color: #f5e4d7; /* Beige crème pour les liens */
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2rem; /* Taille de la police */
+    color: #d3d3d3; /* Gris clair pour le titre */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0,)
 }
