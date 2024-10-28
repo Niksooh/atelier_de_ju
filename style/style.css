@@ -262,18 +262,17 @@ input, textarea, button {
 
 .send {
     font-family: 'Baloo2';
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: #f5e4d7;
     color: #535353;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0,)
 }
 .send:hover {
     background: linear-gradient(135deg, #3b2e2e, #876b5e); /* Dégradé plus foncé au survol */
     color: #f5e4d7;
     cursor: pointer;
-    margin-top: 20px;
 }
 
 .form-feedback {
