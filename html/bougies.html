@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Découvrez nos bougies artisanales faites à la main avec des ingrédients naturels." />
+    <title>Bougies Artisanales</title>
+
+    <!-- Import Google Fonts et fichier CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Baloo+2:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style/style.css" />
+</head>
+<body>
+
+    <!-- Header avec boutons de navigation -->
+    <header>
+        <h1>L'atelier de Ju</h1>
+        <p>Des créations uniques faites à la main avec des ingrédients 100% naturels</p>
+        <div class="button-container">
+            <a href="acceuil.html" class="btn">Accueil</a>
+            <a href="bougies.html" class="btn">Bougies</a>
+            <a href="fondants.html" class="btn">Fondants</a>
+            <a href="contact.html" class="btn">Contact</a>
+        </div>
+    </header>
+
+    <!-- Grille des produits -->
+    <main>
+        <div class="product-grid">
+            <div class="product-card" onclick="openModal('modal1')">
+                <img src="chemin-vers-image1.jpg" alt="Bougie parfumée" />
+                <h3>Bougie Parfumée</h3>
+                <p>Une bougie fabriquée à la main avec un parfum subtil et relaxant.</p>
+            </div>
+            <div class="product-card" onclick="openModal('modal2')">
+                <img src="chemin-vers-image2.jpg" alt="Fondant parfumé" />
+                <h3>Fondant Parfumé</h3>
+                <p>Fondant aux huiles essentielles pour des moments de détente.</p>
+            </div>
+            <div class="product-card" onclick="openModal('modal3')">
+                <img src="chemin-vers-image3.jpg" alt="Bougie aux agrumes" />
+                <h3>Bougie aux Agrumes</h3>
+                <p>Un mélange revigorant d'huiles essentielles d'agrumes.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 L'atelier de Ju. Tous droits réservés.<br />Créé par Dev-DTS</p>
+    </footer>
+
+    <!-- Script pour les modales dynamiques -->
+    <script src="popup.js"></script>
+
+</body>
+</html>
