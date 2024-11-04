@@ -62,12 +62,11 @@ header p {
 
 /* Styles pour les images dans les sections */
 .section-image {
-    width: 100px; /* Largeur de l'image */
-    height: 100px; /* Hauteur de l'image */
+    width: 350px; /* Largeur de l'image */
+    height: 350px; /* Hauteur de l'image */
     border-radius: 50%; /* Rendre l'image ronde */
     object-fit: cover; /* Couvrir le conteneur sans déformer l'image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
-    margin-right: 20px; /* Espace à droite de l'image */
 }
 
 /* Styles pour les sections */
@@ -95,22 +94,23 @@ section {
     display: flex; /* Utilise Flexbox pour l'alignement de l'image et du titre */
     align-items: flex-start; /* Aligne l'image et le titre en haut */
     gap: 120px; /* Espace entre l'image et le titre */
-    margin-left: 140px;
+    margin-left: 20px;
 }
 
 /* Réduction de la taille du texte si nécessaire */
 section p {
-    font-size: 1.2rem; /* Taille de la police pour le texte */
+    font-size: 25px; /* Taille de la police pour le texte */
     color: #f5e4d7; /* Beige crème pour le texte au survol */
     line-height: 1.6; /* Hauteur de ligne pour un meilleur espacement */
     margin: 10px 0; /* Espacement autour des paragraphes */
     text-align: justify; /* Justifier le texte pour une apparence plus soignée */
+    margin-top: 40px;
 }
 
 /* Ajoutez un style pour les titres si besoin */
-section h2 {
+.H2-acceuil {
     font-family: 'Dancing Script', sans-serif;
-    font-size: 2.5rem; /* Taille du titre */
+    font-size: 60px; /* Taille du titre */
     color: #f5e4d7; /* Beige crème pour le texte au survol */
     text-align: left; /* Alignement à gauche */
 }
