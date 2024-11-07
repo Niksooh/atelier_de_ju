@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez nos bougies artisanales faites à la main avec des ingrédients naturels."
+    />
+    <title>{{ page.title | default: "Bougies Artisanales" }}</title> <!-- Titre dynamique -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Baloo+2:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ 'style/style.css' | asset_url }}" /> <!-- Chemin dynamique vers le fichier CSS -->
+
+  </head>
+  <body>
+
+    <header>
+      <h1>L'atelier de Ju'</h1>
+      <p>Des créations uniques faites à la main avec des ingrédients 100% made in France</p>
+
+      <div class="button-container">
+        <a href="{{ '/acceuil.html' | url }}" class="btn">Accueil</a>
+        <a href="{{ '/bougies.html' | url }}" class="btn">Bougies</a>
+        <a href="{{ '/fondants.html' | url }}" class="btn">Fondants</a>
+        <a href="{{ '/contact.html' | url }}" class="btn">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="ODD">
+        <div class="section-header">
+          <img src="{{ 'assets/stand.jpg' | asset_url }}" alt="Description de l'image" class="section-image">
+          <h2 class="H2-acceuil">{{ 'Parlons de l\'atelier' }}</h2> <!-- Titre statique -->
+        </div>
+        <p>Bienvenue dans l'Atelier de Ju, où chaque bougie est façonnée avec soin et passion. Spécialisée dans la fabrication artisanale...</p>
+      </section>
+
+      <section class="EVEN">
+        <div class="section-header">
+          <img src="{{ 'assets/fabrication.png' | asset_url }}" alt="Description de l'image" class="section-image">
+          <h2 class="H2-acceuil">{{ 'Fabrication artisanales' }}</h2>
+        </div>
+        <p>Nos bougies sont le fruit d’un savoir-faire artisanal unique, où chaque étape de fabrication est réalisée à la main avec minutie...</p>
+      </section>
+
+      <section class="ODD">
+        <div class="section-header">
+          <img src="{{ 'assets/cire-de-colza-1.webp' | asset_url }}" alt="Description de l'image" class="section-image">
+          <h2 class="H2-acceuil">{{ 'Choix et origines de nos produits' }}</h2>
+        </div>
+        <p>Nos bougies artisanales sont élaborées avec des ingrédients soigneusement sélectionnés, provenant du sud de la France...</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 L'atelier de Ju'. Tous droits réservés.<br>
+         Créé par Dev-DTS</p>
+    </footer>
+    <script src="{{ 'JS/anim.js' | asset_url }}"></script> <!-- Chemin dynamique vers le script -->
+  </body>
+</html>

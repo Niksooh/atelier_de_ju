@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Découvrez nos bougies artisanales faites à la main avec des ingrédients naturels." />
+    <title>{{ page.title | default: "Bougies Artisanales" }}</title> <!-- Titre dynamique -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Baloo+2:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ 'style/style.css' | asset_url }}" /> <!-- Fichier CSS dynamique -->
+  </head>
+  <body>
+    <header>
+      <h1>L'atelier de Ju'</h1>
+      <p>Des créations uniques faites à la main avec des ingrédients 100% made in France</p>
+
+      <div class="button-container">
+        <a href="{{ '/acceuil.html' | url }}" class="btn">Accueil</a>
+        <a href="{{ '/bougies.html' | url }}" class="btn">Bougies</a>
+        <a href="{{ '/fondants.html' | url }}" class="btn">Fondants</a>
+        <a href="{{ '/contact.html' | url }}" class="btn">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <h2 class="H2">Contactez-nous</h2>
+        <form id="orderForm" action="https://formspree.io/f/mjkvyqwq" method="POST">
+          <label class="label" for="name">Nom</label>
+          <input type="text" id="name" name="name" required placeholder="Votre nom et prénom (Obligatoire)" />
+
+          <label class="label" for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Votre adresse email (Obligatoire)" />
+
+          <label class="label" for="phone">Téléphone</label>
+          <input type="text" id="phone" name="phone" placeholder="Votre numéro de Téléphone (Recommandé)" />
+
+          <label class="label" for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Votre message (Obligatoire)"></textarea>
+
+          <button class="send" type="submit">Envoyer</button>
+        </form>
+        <div id="formFeedback" class="form-feedback"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 L'atelier de Ju'. Tous droits réservés.<br />Créé par Dev-DTS</p>
+    </footer>
+
+    <script src="{{ 'form.js' | asset_url }}"></script> <!-- Fichier JavaScript dynamique -->
+  </body>
+</html>
