@@ -22,10 +22,10 @@ header {
 
 header h1 {
     font-family: 'Dancing Script', sans-serif;
-    font-size: 5.5rem; /* Taille de la police */
+    font-size: 5.5rem;
     color: #d3d3d3; /* Gris clair pour le titre */
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre portée pour plus de visibilité */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 header p {
@@ -33,15 +33,13 @@ header p {
     color: #d3d3d3; /* Gris clair pour le titre */
 }
 
-/* Conteneur des boutons */
 .button-container {
-    margin-top: 20px; /* Espace au-dessus des boutons */
+    margin-top: 20px;
     display: flex;
-    gap: 15px; /* Espace entre les boutons */
-    justify-content: center; /* Centrer les boutons */
+    gap: 15px;
+    justify-content: center;
 }
 
-/* Boutons */
 .btn {
     background: #f5e4d7; /* Dégradé chocolat et marron clair pour les boutons */
     color: #4b3d3d; /* Brun chocolat pour le texte */
@@ -54,88 +52,86 @@ header p {
     text-decoration: none;
     transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
+
 .btn:hover {
     background: linear-gradient(135deg, #3b2e2e, #876b5e); /* Dégradé plus foncé au survol */
     color: #f5e4d7; /* Beige crème pour le texte au survol */
-    transform: scale(1.1); /* Effet d'agrandissement au survol */
+    transform: scale(1.1);
 }
 
-/* Styles pour les images dans les sections */
 .section-image {
-    width: 350px; /* Largeur de l'image */
-    height: 350px; /* Hauteur de l'image */
-    border-radius: 50%; /* Rendre l'image ronde */
-    object-fit: cover; /* Couvrir le conteneur sans déformer l'image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles pour les sections */
 main {
     flex: 1;
-    padding: 20px; /* Ajoute de l'espace pour éloigner le contenu du header et du footer */
-    display: flex; /* Utilise Flexbox pour centrer les sections */
-    flex-direction: column; /* Aligne les sections verticalement */
-    align-items: center; /* Centre les sections horizontalement */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 section {
     background: linear-gradient(135deg, #4b3d3d, #a68a7d); /* Dégradé de chocolat et marron clair */
-    border-radius: 15px; /* Coins arrondis pour les sections */
-    padding: 30px; /* Espace intérieur */
-    margin: 30px 0; /* Marge entre les sections */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ombre portée douce */
-    overflow: hidden; /* Masque le débordement si nécessaire */
-    max-width: 800px; /* Limite la largeur maximale des sections */
-    width: 90%; /* Prend 90% de la largeur disponible */
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    width: 90%; /
 }
 
-/* Styles pour le conteneur image et titre */
+
 .section-header {
-    display: flex; /* Utilise Flexbox pour l'alignement de l'image et du titre */
-    align-items: flex-start; /* Aligne l'image et le titre en haut */
-    gap: 120px; /* Espace entre l'image et le titre */
+    display: flex;
+    align-items: flex-start;
+    gap: 120px;
     margin-left: 20px;
 }
 
-/* Réduction de la taille du texte si nécessaire */
+
 section p {
-    font-size: 25px; /* Taille de la police pour le texte */
+    font-size: 25px;
     color: #f5e4d7; /* Beige crème pour le texte au survol */
-    line-height: 1.6; /* Hauteur de ligne pour un meilleur espacement */
-    margin: 10px 0; /* Espacement autour des paragraphes */
-    text-align: justify; /* Justifier le texte pour une apparence plus soignée */
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: justify;
     margin-top: 40px;
 }
 
-/* Ajoutez un style pour les titres si besoin */
+
 .H2-acceuil {
     font-family: 'Dancing Script', sans-serif;
-    font-size: 60px; /* Taille du titre */
+    font-size: 60px;
     color: #f5e4d7; /* Beige crème pour le texte au survol */
-    text-align: left; /* Alignement à gauche */
+    text-align: left;
 }
 
-/* Styles pour les sections avec décalage */
 section {
     background-color: #ffffff; /* Fond blanc pour les sections */
-    border-radius: 15px; /* Coins arrondis pour les sections */
-    padding: 30px; /* Espace intérieur */
-    margin: 80px 0; /* Marge entre les sections */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ombre portée douce */
-    overflow: hidden; /* Masque le débordement si nécessaire */
-    max-width: 800px; /* Limite la largeur maximale des sections */
-    width: 90%; /* Prend 90% de la largeur disponible */
+    border-radius: 15px;
+    padding: 30px;
+    margin: 80px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    width: 90%; /
 }
 
-/* Décalage alternatif pour les sections */
 .ODD:nth-child(odd) {
-    margin-left: 400px; /* Décalage à gauche pour les sections impaires */
-    margin-right: 0; /* Pas de décalage à droite */
+    margin-left: 500px;
+    margin-right: 0;
 }
 
 .EVEN:nth-child(even) {
-    margin-left: 0; /* Pas de décalage à gauche */
-    margin-right: 400px; /* Décalage à droite pour les sections paires */
+    margin-left: 0;
+    margin-right: 500px;
 }
 
 /* Grille des produits */
@@ -159,7 +155,7 @@ section {
 
 .product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Augmentation de l'ombre au survol */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
@@ -169,7 +165,7 @@ section {
 }
 
 .product-card img:hover {
-    transform: scale(1.1); /* Zoom léger au survol */
+    transform: scale(1.1);
 }
 
 .product-card h3 {
@@ -238,6 +234,7 @@ section {
     font-family: Baloo2;
     font-size: 2.5rem;
     text-align: center;
+    color: #f5e4d7;
 }
 
 .label{
@@ -288,16 +285,18 @@ footer {
     padding: 20px;
     text-align: center;
     font-family: 'Dancing Script', sans-serif;
-    font-size: 2rem; /* Taille de la police */
+    font-size: 2rem;
     color: #d3d3d3; /* Gris clair pour le titre */
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0,)
 }
 
+/* Animation */
+
    /* Initial state for the sections (hidden and translated) */
    .ODD, .EVEN {
     opacity: 0;
-    transform: translateX(-300px); /* slide-in from the left */
+    transform: translateX(-300px);
     transition: all 4s ease;
   }
 
@@ -308,5 +307,5 @@ footer {
   }
 
   .EVEN {
-    transform: translateX(300px); /* slide-in from the right */
+    transform: translateX(300px);
   }
