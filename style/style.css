@@ -293,3 +293,20 @@ footer {
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0,)
 }
+
+   /* Initial state for the sections (hidden and translated) */
+   .ODD, .EVEN {
+    opacity: 0;
+    transform: translateX(-300px); /* slide-in from the left */
+    transition: all 4s ease;
+  }
+
+  .ODD.slide-in-left,
+  .EVEN.slide-in-right {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .EVEN {
+    transform: translateX(300px); /* slide-in from the right */
+  }

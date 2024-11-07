@@ -1,34 +1,20 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const contactForm = document.getElementById("contactForm");
-    const formFeedback = document.getElementById("formFeedback");
 
-    contactForm.addEventListener("submit", async function(event) {
-        event.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("orderForm");
 
-        // Récupérer les données du formulaire
-        const formData = new FormData(contactForm);
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
 
-        try {
-            // Envoyer le formulaire avec fetch vers l'URL Formspree
-            const response = await fetch("https://formspree.io/f/yourFormspreeID", {
-                method: "POST",
-                headers: {
-                    "Accept": "application/json"
-                },
-                body: formData
-            });
+      const formData = {
+        firstName: document.getElementById("firstName").value,
+        lastName: document.getElementById("lastName").value,
+        email: document.getElementById("email").value,
+        number: document.getElementById("number").value,
+        message: document.getElementById("message").value,
+      };
 
-            // Vérifier si la réponse est OK
-            if (response.ok) {
-                formFeedback.textContent = "Merci pour votre message ! Nous vous répondrons dès que possible.";
-                formFeedback.style.color = "green";
-                contactForm.reset();
-            } else {
-                throw new Error("Une erreur est survenue lors de l'envoi du formulaire.");
-            }
-        } catch (error) {
-            formFeedback.textContent = "Une erreur est survenue. Veuillez réessayer.";
-            formFeedback.style.color = "red";
-        }
+      console.log("Form Data Submitted:", formData);
+
+      form.submit();
     });
-});
+  });
